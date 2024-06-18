@@ -49,7 +49,7 @@ sudo apt install cmake
 
 Une fois les outils de compilation installés, passons au lancement du logiciel
 ```sh
-git clone https://web.isen-ouest.fr/gitlab/clenoi28/projet-a1-cyriac-edouard.git; cd projet-a1-cyriac-edouard; chmod u+x ./script.sh
+git clone https://github.com/MrCyci6/projet-genealogie.git; cd projet-a1-cyriac-edouard; chmod u+x ./script.sh
 ```
 ```sh
 ./script.sh
