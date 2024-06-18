@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+/* TITRE */
+h1 {
+    text-align: center;
+
+    margin: 5% auto 5%;
+}
+
+/* ARBRE */
+.tree {
+	display: flex;
+	justify-content: center;
+}
+
+/* *BRANCHE* */
+.tree ul {
+	padding-top: 20px; 
+	position: relative;
+}
+
+/* *PERSONNE* */
+.tree li {
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	
+    position: relative;
+  
+	padding: 20px 10px 0 0;
+}
+ 
+/* *LIAISONS* */
+.tree li::before, .tree li::after{
+	content: '';
+  
+	position: absolute; 
+    top: 0; 
+    right: 50%;
+  
+	border-top: 1px solid #fff;
+	width: 50%; 
+    height: 20px;
+}
+
+.tree li::after{
+  left: 50%;
+	border-left: 1px solid #fff;
+}
+ 
+.tree li:only-child{ 
+  padding-top: 0;
+}
+ 
+.tree li:first-child::before, .tree li:last-child::after{
+	border: none;
+}
+
+.tree li::before{
+	border-right: 1px solid #fff;
+}
+ 
+.tree ul ul::before{
+	content: '';
+	
+  position: absolute; 
+  top: 0; 
+  left: 50%;
+	
+  border-left: 1px solid #fff;
+	width: 0; 
+  height: 20px;
+}
+ 
+.tree li a {
+	border: 1px solid #fff;
+	padding: 2% 5% 2% 5%;
+	
+    text-decoration: none;
+  
+	color: #fff;
+	display: inline-block;
+ 
+	border-radius: 15px;
+}
+
+/* INFORMATIONS */
+.infos {
+	width: 35em;
+
+	display: flex;
+	justify-content: space-around;
+
+	margin: 0 auto 0;
+	border: 1px solid #fff;
+}
+
+/* *BOUTTONS BACK ET AFTER* */
+.infos .arrow {
+	align-self: center;
+	margin: 10%;
+}
+
+.infos .arrow a {
+	text-decoration: none;
+	color: #000;
+
+	background-color: #fff;
+	padding: 15%;
+	border-radius: 5px;
+}
+
+/* *FICHE DE LA PERSONNE* */
+.infos .card {
+	display: flex;
+	align-items: center;
+}
+
+.infos .card img {
+	height: 50%;
+	margin-left: 30px;
+}
+
+.infos .card ul {
+	list-style: none;
+}
+
+.infos .card ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.infos .card ul li a:hover {
+	color: green;
+	cursor: crosshair;
+}
+
+.color {
+	color: cadetblue;
+}
